@@ -16,26 +16,26 @@
 }
 
 .sidebar {
-    width: 100px;
+    width: 75px;
     background-color: #000000;
 }
 
 .main-content {
-    width: calc(100vw - 100px);
+    width: calc(100vw - 75px);
     background-color: #141922;
 }
 
 header {
-    width: calc(100vw - 100px);
+    width: calc(100vw - 75px);
     position: fixed;
-    left: 100px;
+    left: 75px;
     top: 0;
     z-index: 1;
     background-color: #090B11;
     height: 100px;
 }
 
-@media screen and (min-width: 639px) {
+@media screen and (min-width: 878px) {
     .sidebar {
         width: 150px;
     }
