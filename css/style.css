@@ -4,18 +4,11 @@
     box-sizing: border-box;
 }
 
-/* Layout classes */
-
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 600;
-    font-size: medium;
-}
-
+/* Layout style */
 .top-section {
-    display: flex;
     height: calc(100vh - 100px);
-    background-color: aqua;
+    background-color: #141922;
+    display: flex;
 }
 
 .bottom-section {
@@ -30,7 +23,6 @@ body {
 
 .main-content {
     width: calc(100vw - 75px);
-    background-color: #141922;
 }
 
 header {
@@ -39,188 +31,66 @@ header {
     left: 75px;
     top: 0;
     z-index: 1;
-    background-color: #090B11;
-    height: 100px;
-    align-content: center;
+    background-color: rgba(0, 0, 0, 0.222);
+    text-align: right;
 }
 
-.row {
-    width: 90%;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-}
-
-
-
-
-main {
-    width: calc(100% - 75px);
-    height: calc(100% - 100px);
-    position: fixed;
-    z-index: 2;
-    top: 100px;
-    overflow: scroll;
-
-}
-
-.upgrade-plan {
-    display: flex;
-    justify-content: right;
-}
-
-.logo-section {
-    display: flex;
-    justify-content: left;
-    align-items: center;
-}
-
-.logo-section .icon {
-    padding-left: 5px;
-}
-
-.utilities {
-    justify-content: center;
-    align-items: center;
-}
-
-
-.text,
-.install-app span,
-.user-profile span {
-    display: none;
-    margin-left: 10px;
-}
-
-
-.sidebar {
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 40px;
+.top-sidebar {
+    height: calc(100% - 80px);
+    overflow-y: hidden;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 
-.icon {
-    display: inline;
+.bottom-sidebar {
+    height: 80px;
 }
 
-.utilities,
-.install-app,
-.user-profile {
-    padding: 5px;
-    padding-left: 10px;
+.logo {
+    height: 80px;
 }
 
-.content {
-    padding-top: 10px;
+.menu {
+    height: 100px;
 }
 
-.add-playlist i {
-    background-color: #A3A3A3;
-    color: #000000;
+.playlist {
+    overflow-y: hidden;
+}
+
+.playlist-list {
     padding: 10px;
-    margin-right: 10px;
-}
-
-.user-profile i {
-    font-size: 30px;
-    margin: 10px 0;
-    color: #808080;
-}
-
-
-.install-app i {
-    font-size: 20px;
-}
-
-.category-list {
-    display: flex;
     list-style: none;
+    height: 80%;
+    overflow-y: auto;
 }
 
-.category-list li {
-    margin: 10px;
+.playlist-list li {
+    margin: 10px 0px;
 }
 
-
-/* Utilities */
-
-.mb-40 {
-    margin-bottom: 40px;
-}
-
-.pt-20 {
-    padding-top: 20px;
-}
-
-.mr-10 {
-    margin-right: 10px;
-}
-
-/* Style classes */
-
+/* Style class */
 .ft-white {
     color: #fff;
 }
 
-.ft-grey {
-    color: grey;
+/* Utilities */
+.pd-10 {
+    padding: 10px;
 }
-
-
-
-#upgrade-btn {
-    padding: 10px 30px;
-    background-color: #090B11;
-    border: 2px solid #fff;
-    border-radius: 30px;
-    font-weight: 700;
-    margin-right: 5px;
-}
-
-
-.playlist {
-    display: none;
-}
-
 
 /* Media Query */
-@media screen and (min-width: 639px) {
+@media screen and (min-width: 650px) {
     .sidebar {
-        width: 250px;
+        width: 200px;
     }
 
     .main-content {
-        width: calc(100vw - 250px);
+        width: calc(100vw - 200px);
     }
 
     header {
-        width: calc(100vw - 250px);
-        left: 250px;
+        width: calc(100vw - 200px);
+        left: 200px;
     }
-
-    .top-sidebar .icon {
-        font-size: 30px;
-    }
-
-    main {
-        width: calc(100% - 250px);
-        height: calc(100% - 100px);
-        position: fixed;
-        z-index: 2;
-        top: 100px;
-        overflow: scroll;
-
-    }
-
-    .text,
-    .playlist,
-    .install-app span,
-    .user-profile span {
-        display: inline;
-    }
-
 }
