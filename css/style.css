@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+/* Layout classes */
 .top-section {
     display: flex;
     height: calc(100vh - 100px);
@@ -33,9 +34,40 @@ header {
     z-index: 1;
     background-color: #090B11;
     height: 100px;
+    align-content: center;
+
 }
 
-@media screen and (min-width: 878px) {
+.upgrade-plan {
+    display: flex;
+    justify-content: right;
+}
+
+
+
+/* Utilities */
+
+
+
+
+/* Style classes */
+
+.ft-white {
+    color: #fff;
+}
+
+#upgrade-btn {
+    padding: 10px 30px;
+    background-color: #090B11;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    font-weight: 700;
+    margin-right: 5px;
+}
+
+
+/* Media Query */
+@media screen and (min-width: 639px) {
     .sidebar {
         width: 150px;
     }
