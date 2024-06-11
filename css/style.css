@@ -43,11 +43,30 @@ header {
     justify-content: right;
 }
 
+.logo {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.logo-text {
+    display: none;
+    font-size: xx-large;
+}
+
+.txt-logo {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
 
 
 /* Utilities */
 
-
+.mg-10 {
+    margin: 10px;
+}
 
 
 /* Style classes */
@@ -66,18 +85,28 @@ header {
 }
 
 
+
+
 /* Media Query */
 @media screen and (min-width: 639px) {
     .sidebar {
-        width: 150px;
+        width: 200px;
     }
 
     .main-content {
-        width: calc(100vw - 150px);
+        width: calc(100vw - 200px);
     }
 
     header {
-        width: calc(100vw - 150px);
-        left: 150px;
+        width: calc(100vw - 200px);
+        left: 200px;
+    }
+
+    .logo-text {
+        display: inline;
+    }
+
+    .logo {
+        font-size: 50px;
     }
 }
