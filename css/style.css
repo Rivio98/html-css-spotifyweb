@@ -42,6 +42,28 @@ header {
     background-color: #090B11;
     height: 100px;
     align-content: center;
+}
+
+.row {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.col-17 {
+    width: calc(100% / 6);
+}
+
+
+main {
+    width: calc(100% - 75px);
+    height: calc(100% - 100px);
+    position: fixed;
+    z-index: 2;
+    top: 100px;
+    overflow: scroll;
 
 }
 
@@ -174,6 +196,16 @@ header {
 
     .top-sidebar .icon {
         font-size: 30px;
+    }
+
+    main {
+        width: calc(100% - 250px);
+        height: calc(100% - 100px);
+        position: fixed;
+        z-index: 2;
+        top: 100px;
+        overflow: scroll;
+
     }
 
     .text,
