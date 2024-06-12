@@ -56,6 +56,7 @@ header {
 
 .playlist {
     overflow-y: hidden;
+    display: none;
 }
 
 .playlist-list {
@@ -69,6 +70,19 @@ header {
     margin: 10px 0px;
 }
 
+.content {
+    display: flex;
+    align-items: center;
+}
+
+.txt {
+    display: none;
+}
+
+.logo-desktop {
+    display: none;
+}
+
 /* Style class */
 .ft-white {
     color: #fff;
@@ -78,6 +92,7 @@ header {
 .pd-10 {
     padding: 10px;
 }
+
 
 /* Media Query */
 @media screen and (min-width: 650px) {
@@ -93,4 +108,16 @@ header {
         width: calc(100vw - 200px);
         left: 200px;
     }
+
+    .txt,
+    .logo-desktop,
+    .playlist {
+        display: block;
+    }
+
+    .logo-mobile {
+        display: none;
+    }
+
+
 }
