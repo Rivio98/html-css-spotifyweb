@@ -50,9 +50,7 @@ header {
     height: 80px;
 }
 
-.menu {
-    height: 100px;
-}
+.menu {}
 
 .playlist {
     overflow-y: hidden;
@@ -73,6 +71,7 @@ header {
 .content {
     display: flex;
     align-items: center;
+    padding: 10px 0px;
 }
 
 .txt {
@@ -81,6 +80,14 @@ header {
 
 .logo-desktop {
     display: none;
+}
+
+.menu img {
+    width: 40px;
+}
+
+.menu {
+    margin-left: 5px;
 }
 
 /* Style class */
