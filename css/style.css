@@ -14,6 +14,8 @@
 .bottom-section {
     height: 100px;
     background-color: #282828;
+    align-content: center;
+    padding: 10px 10px 20px 10px;
 }
 
 .sidebar {
@@ -64,6 +66,28 @@ main {
     justify-content: center;
 }
 
+.left {
+    text-align: left;
+}
+
+.center {
+    text-align: center;
+    display: block;
+}
+
+.right {
+    text-align: right;
+}
+
+.cover img {
+    width: 100%;
+}
+
+.cover {
+    display: flex;
+    align-items: center;
+}
+
 
 .section {
     display: flex;
@@ -71,6 +95,22 @@ main {
 
 .col-50 {
     width: calc(100% / 2)
+}
+
+.col-30 {
+    width: calc(100% / 3);
+}
+
+.col-25 {
+    width: calc(100% / 2)
+}
+
+.col-26 {
+    width: calc((100% / 2) * 2);
+}
+
+.left-icons {
+    i
 }
 
 .logo {
@@ -121,12 +161,24 @@ main {
     padding: 5px 0px;
 }
 
+.block {
+    display: block;
+    width: 100%;
+}
+
 .txt {
     display: none;
 }
 
 .logo-desktop {
     display: none;
+}
+
+.bar {
+    border-radius: 5px;
+    width: 100%;
+    height: 5px;
+    background-color: grey;
 }
 
 .music {
@@ -163,6 +215,15 @@ main {
     margin-left: 5px;
 }
 
+.bottom-bar {
+    display: flex;
+    width: 100%;
+}
+
+.col {
+    width: calc(100% / 3);
+}
+
 #upgrade {
     color: #fff;
     padding: 10px 20px;
@@ -170,6 +231,11 @@ main {
     border: 2px solid #fff;
     background-color: #090B11;
     margin-right: 10px;
+}
+
+#upgrade:hover {
+    scale: 1.2;
+    margin-right: 30px;
 }
 
 
@@ -194,6 +260,34 @@ main {
     margin-top: 10px;
 }
 
+.left-icons i {
+    padding: 5px;
+    display: block;
+}
+
+.left-icons {
+    text-align: center;
+}
+
+.playbar-top {
+    display: flex;
+    flex: 50%;
+    padding-top: 10px;
+    height: 50%;
+}
+
+
+.playbar-bottom {
+    padding-top: 20px;
+    display: flex;
+    flex: 50%;
+    height: 50%;
+}
+
+.col-20 {
+    width: calc(100% / 5);
+}
+
 h2,
 h3 {
     color: #fff;
@@ -208,6 +302,10 @@ h4 {
 }
 
 /* Utilities */
+.center {
+    align-content: center;
+}
+
 .pd-10 {
     padding: 10px;
 }
@@ -274,6 +372,14 @@ h4 {
     .section {
         display: flex;
         width: calc(100% / 2);
+    }
+
+    .info span {
+        display: inline;
+    }
+
+    .left-icons {
+        display: flex;
     }
 
 }
