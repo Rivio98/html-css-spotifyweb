@@ -78,6 +78,7 @@ main {
 }
 
 .album {
+    text-align: center;
     padding: 0px 10px;
 }
 
@@ -171,13 +172,35 @@ main {
     margin-right: 10px;
 }
 
+
 /* Style class */
+.ft-gray {
+    color: gray;
+}
+
 .ft-white {
     color: #fff;
 }
 
+.over:hover {
+    color: #fff;
+    cursor: pointer;
+}
+
+.plus-icon {
+    background-color: gray;
+    color: #000000;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+h2,
 h3 {
     color: #fff;
+}
+
+h4 {
+    color: gray;
 }
 
 .txt-center {
@@ -197,7 +220,13 @@ h3 {
     display: none;
 }
 
+.circle-img {
+    clip-path: circle();
+}
 
+.mg-20 {
+    margin: 20px 0px;
+}
 
 /* Media Query */
 @media screen and (min-width: 650px) {

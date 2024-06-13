@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -19,7 +22,7 @@
                     </div>
                 </div>
                 <div class="menu">
-                    <div class="home">
+                    <div class="home ft-white">
                         <div class="content">
                             <img src="./img/home.svg" alt="">
                             <span class="txt">Home</span>
@@ -28,56 +31,57 @@
                     <div class="search">
                         <div class="content">
                             <img src="./img/search.svg" alt="">
-                            <span class="txt">Cerca</span>
+                            <span class="txt ft-gray over">Cerca</span>
                         </div>
                     </div>
                     <div class="library">
                         <div class="content">
                             <img src="./img/libreria.svg" alt="">
-                            <span class="txt">La tua libreria</span>
+                            <span class="txt ft-gray over">La tua libreria</span>
                         </div>
                     </div>
                 </div>
                 <div class="playlist pd-tb-10">
-                    <h2 class="ft-white">Playlist</h2>
-                    icona <span>Crea Playlist</span>
+                    <h2 class="ft-white">PLAYLIST</h2>
+                    <i class="fa-solid fa-plus over ft-gray plus-icon"></i>
+                    <span class="ft-gray over">Crea Playlist</span>
                     <ul class="playlist-list">
                         <li>
-                            <span>Nome Playlist</span>
+                            <span class="ft-gray over">Nome Playlist</span>
                         </li>
                         <li>
-                            <span>Nome Playlist</span>
+                            <span class="ft-gray over">Nome Playlist</span>
                         </li>
                         <li>
-                            <span>Nome Playlist</span>
+                            <span class="ft-gray over">Nome Playlist</span>
                         </li>
                         <li>
-                            <span>Nome Playlist</span>
+                            <span class="ft-gray over">Nome Playlist</span>
                         </li>
                         <li>
-                            <span>Nome Playlist</span>
+                            <span class="ft-gray over">Nome Playlist</span>
                         </li>
                         <li>
-                            <span>Nome Playlist</span>
+                            <span class="ft-gray over">Nome Playlist</span>
                         </li>
                         <li>
-                            <span>Nome Playlist</span>
+                            <span class="ft-gray over">Nome Playlist</span>
                         </li>
                     </ul>
                 </div>
             </div>
-            <div class="bottom-sidebar ft-white">
+            <div class="bottom-sidebar">
                 <div class="download pd-tb-10">
                     <div class="content">
                         <img src="./img/download.svg" alt="">
-                        <span class="txt">Installa app</span>
+                        <span class="txt ft-gray">Installa app</span>
                     </div>
                 </div>
                 <hr id="division">
                 <div class="user pd-tb-10">
                     <div class="content">
                         <img src="./img/profile.svg" alt="">
-                        <span class="txt">Rivaldo Gjoni</span>
+                        <span class="txt ft-white">Rivaldo Gjoni</span>
                     </div>
                 </div>
             </div>
@@ -88,20 +92,22 @@
             </header>
             <main>
                 <div class="container">
-                    <div class="category ft-white">
+                    <div class="category ">
                         <ul class="category-list">
-                            <li>IN EVIDENZA</li>
-                            <li>PODCAST</li>
-                            <li>CLASSIFICHE</li>
-                            <li>GENERI E MOOD</li>
-                            <li>NUOVE USCITE</li>
-                            <li>SCOPRI</li>
+                            <li><span class="ft-gray over">IN EVIDENZA</span></li>
+                            <li><span class="ft-gray over">PODCAST</span></li>
+                            <li><span class="ft-gray over">CLASSIFICHE</span></li>
+                            <li><span class="ft-gray over">GENERI E MOOD</span></li>
+                            <li><span class="ft-gray over">NUOVE USCITE</span></li>
+                            <li><span class="ft-gray over">PODCAST</span></li>
                         </ul>
                     </div>
                     <div class="music pd-tb-10">
                         <div class="row">
+                            <div class="title mg-20">
+                                <h2>Recently played</h2>
+                            </div>
                             <div class="col-33">
-
                                 <div class="section pd-tb-10">
                                     <div class="col-50">
                                         <div class="album">
@@ -113,8 +119,8 @@
                                     <div class="col-50">
                                         <div class="album">
                                             <img src="./img/stranger.jpeg" alt="">
-                                            <h3>Heavy Metal</h3>
-                                            <h4>Subtitle</h4>
+                                            <h3>Stranger Things, Vol.1 (a Netflix Original Series Soundtrack)</h3>
+                                            <h4>SKyle Dixon & Michael Stein</h4>
                                         </div>
                                     </div>
                                 </div>
@@ -122,14 +128,14 @@
                                     <div class="col-50">
                                         <div class="album">
                                             <img src="./img/aquietplace.jpeg" alt="">
-                                            <h3>Heavy Metal</h3>
+                                            <h3>A quiet place</h3>
                                             <h4>Subtitle</h4>
                                         </div>
                                     </div>
                                     <div class="col-50">
                                         <div class="album">
                                             <img src="./img/split.jpeg" alt="">
-                                            <h3>Heavy Metal</h3>
+                                            <h3>Split</h3>
                                             <h4>Subtitle</h4>
                                         </div>
                                     </div>
@@ -138,18 +144,22 @@
                                     <div class="col-50">
                                         <div class="album">
                                             <img src="./img/cure.jpeg" alt="">
-                                            <h3>Heavy Metal</h3>
+                                            <h3>A cure for welness</h3>
                                             <h4>Subtitle</h4>
                                         </div>
                                     </div>
                                     <div class="col-50">
                                         <div class="album">
                                             <img src="./img/sinister.jpeg" alt="">
-                                            <h3>Heavy Metal</h3>
+                                            <h3>Sinister</h3>
                                             <h4>Subtitle</h4>
                                         </div>
                                     </div>
                                 </div>
+                            </div>
+                            <div class="title mg-20">
+                                <h2>Creato per Rivaldo Gjoni</h2>
+                                <h4>Più ascolti, più accurati saranno i suggerimenti</h4>
                             </div>
                             <div class="col-33">
                                 <div class="section pd-tb-10">
@@ -167,19 +177,22 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="title mg-20">
+                                <h2>Artisti più popolari</h2>
+                            </div>
                             <div class="col-33">
                                 <div class="section pd-tb-10">
                                     <div class="col-50">
                                         <div class="album">
-                                            <img src="./img/youg.jpeg" alt="">
-                                            <h3>Heavy Metal</h3>
+                                            <img class="circle-img" src="./img/youg.jpeg" alt="">
+                                            <h3>Youg</h3>
                                             <h4>Subtitle</h4>
                                         </div>
                                     </div>
                                     <div class="col-50">
                                         <div class="album">
-                                            <img src="./img/einaudi.jpeg" alt="">
-                                            <h3>Heavy Metal</h3>
+                                            <img class="circle-img" src="./img/einaudi.jpeg" alt="">
+                                            <h3>Einaudi</h3>
                                             <h4>Subtitle</h4>
                                         </div>
                                     </div>
