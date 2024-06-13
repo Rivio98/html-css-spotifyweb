@@ -27,12 +27,27 @@
 
 header {
     width: calc(100vw - 75px);
+    height: 75px;
     position: fixed;
     left: 75px;
     top: 0;
     z-index: 1;
-    background-color: rgba(0, 0, 0, 0.222);
+    background-color: #090B11;
     text-align: right;
+    align-content: center;
+}
+
+main {
+    width: calc(100% - 75px);
+    position: absolute;
+    top: 75px;
+    left: 75px;
+    bottom: 100px;
+    overflow-y: auto;
+}
+
+.container {
+    margin: 10px;
 }
 
 .top-sidebar {
@@ -49,10 +64,25 @@ header {
     justify-content: center;
 }
 
+.row {
+    width: 100%;
+}
+
+.section {
+    display: flex;
+}
+
+.col-50 {
+    width: calc(100% / 2)
+}
+
 .logo {
     height: 80px;
 }
 
+.album {
+    padding: 0px 10px;
+}
 
 .playlist {
     overflow-y: hidden;
@@ -71,6 +101,22 @@ header {
     margin: 10px 0px;
 }
 
+.category {
+    display: flex;
+    justify-content: center;
+}
+
+.category-list {
+    display: inline-block;
+    list-style: none;
+    text-align: center;
+}
+
+.category-list li {
+    display: inline-block;
+    padding: 10px 5px 20px;
+}
+
 .content {
     display: flex;
     align-items: center;
@@ -84,6 +130,17 @@ header {
 .logo-desktop {
     display: none;
 }
+
+.music {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.music img {
+    width: 100%;
+}
+
 
 .menu img {
     width: 40px;
@@ -108,9 +165,22 @@ header {
     margin-left: 5px;
 }
 
+#upgrade {
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 2px solid #fff;
+    background-color: #090B11;
+    margin-right: 10px;
+}
+
 /* Style class */
 .ft-white {
     color: #fff;
+}
+
+.txt-center {
+    text-align: center;
 }
 
 /* Utilities */
@@ -156,5 +226,9 @@ header {
         display: block;
     }
 
+    main {
+        width: calc(100% - 200px);
+        left: 200px;
+    }
 
 }
