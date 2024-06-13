@@ -64,9 +64,6 @@ main {
     justify-content: center;
 }
 
-.row {
-    width: 100%;
-}
 
 .section {
     display: flex;
@@ -179,6 +176,10 @@ main {
     color: #fff;
 }
 
+h3 {
+    color: #fff;
+}
+
 .txt-center {
     text-align: center;
 }
@@ -195,6 +196,7 @@ main {
 #division {
     display: none;
 }
+
 
 
 /* Media Query */
@@ -229,6 +231,29 @@ main {
     main {
         width: calc(100% - 200px);
         left: 200px;
+    }
+
+}
+
+
+@media screen and (min-width: 768px) {
+    .col-33 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .section {
+        display: flex;
+        width: calc(100% / 2);
+    }
+
+}
+
+
+@media screen and (min-width: 992px) {
+    .section {
+        display: flex;
+        width: calc(100% / 3);
     }
 
 }
